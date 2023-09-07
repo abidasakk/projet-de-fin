@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="corps">
+            <div class="logo">
+                    <h1 class="titre">Dev Forum</h1>
+                    <img src="logo.jpg" class="img_logo" alt="">
+
+            </div>
+                   <div class="blogs">
+                    <%let tab=[]%>
+                    <% blogs.forEach(elt=>{ %>
+                      <div>
+                           <h1><% tab.push(elt.nom)%> </h1>
+                           <h2><% tab.push(elt.code)%> </h2>
+                      </div>
+                    <% }) %>
+                   </div>
+
+                   <h2 class="tableau"> <%= tab %></h2>           
+            <div class="autorisation"></div> 
+            <h1 class="se_connecter">Se connecter</h1>
+           
+                 <div class="connecter">
+                   <label for="Email">
+                   <h2>Email</h2>
+                   <input type="text" class="case_text mail" minlength="4" required>
+                   </label>
+                   
+                   <label for="Mot de passe">
+                   <h2>Mot de passe</h2>
+                   <input type="password" class="case_text pass"  minlength="4" required>
+                   </label>
+                  
+                   <button   class="envoyer">Connection</button> 
+                </div>  
+             
+            <div class="h3">
+                  <span> Si vous n'avez pas de compte, vous</span>  
+                   <span>pouvez vous <a href="inscription" class="inscrire">inscrire</a></span>
+            </div> 
+      </div>
+    
+   
+   <div class="s'inscrire">
+   </div>
+
+   <script src="fichier.js"></script>
+</body>
+</html>
